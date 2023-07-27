@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculatrice</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="cal">
+        <table>
+          <tr>
+            <td colspan="3">
+              <input
+                type="text"
+                id="output"
+                pattern="[0-9+\-*/\r\n]+"
+                title="Entrez uniquement des chiffres et les signes +, -, *, / ou utilisez la touche Entrée"
+              />
+            </td>
+            <td>
+              <button class="operator" id="button-C" onclick="effacer()">
+                c
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <button class="number" id="button-7" onclick="afficher('7')">
+                7
+              </button>
+            </td>
+            <td>
+              <button class="number" id="button-8" onclick="afficher('8')">
+                8
+              </button>
+            </td>
+            <td>
+              <button class="number" id="button-9" onclick="afficher('9')">
+                9
+              </button>
+            </td>
+            <td>
+              <button class="operator" id="button-+" onclick="afficher('+')">
+                +
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <button class="number" id="button-4" onclick="afficher('4')">
+                4
+              </button>
+            </td>
+            <td>
+              <button class="number" id="button-5" onclick="afficher('5')">
+                5
+              </button>
+            </td>
+            <td>
+              <button class="number" id="button-6" onclick="afficher('6')">
+                6
+              </button>
+            </td>
+            <td>
+              <button class="operator" id="button--" onclick="afficher('-')">
+                -
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <button class="number" id="button-1" onclick="afficher('1')">
+                1
+              </button>
+            </td>
+            <td>
+              <button class="number" id="button-2" onclick="afficher('2')">
+                2
+              </button>
+            </td>
+            <td>
+              <button class="number" id="button-3" onclick="afficher('3')">
+                3
+              </button>
+            </td>
+
+            <td>
+              <button class="operator" id="button-*" onclick="afficher('*')">
+                *
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <button class="operator" id="button-." onclick="afficher('.')">
+                .
+              </button>
+            </td>
+            <td>
+              <button class="number" id="button-0" onclick="afficher('0')">
+                0
+              </button>
+            </td>
+            <td>
+              <button class="operator" id="button-=" onclick="calculer()">
+                =
+              </button>
+            </td>
+            <td>
+              <button class="operator" id="button-/" onclick="afficher('/')">
+                /
+              </button>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
